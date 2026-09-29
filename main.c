@@ -2,19 +2,38 @@
 
 int main(void)  //int argc,char * argv
 {
-    int x,y,z,m;
-    int a,b,c;
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
+    //변수 선언
+    int op1, op2;
+    int res;
+    //두 개의 정수 입력 받음
+    printf("Input two integers: ");
+    scanf("%i %i", &op1, &op2);
     
-    //1번 연산
-    y = a*x*x + b*x + c;
 
-    //2번 연산
-    m = (x+y+z) / 3;
-    printf("y=%d,m=%d",y,m);
+    //5개의 산술연산자(+,-,*,/,%)로 연산
+    res = op1 + op2;
+    //결과 출력
+    printf("%i + %i = %i\n", op1,op2,res);
+
+    //5개의 산술연산자(+,-,*,/,%)로 연산
+    res = op1 - op2;
+    //결과 출력
+    printf("%i - %i = %i\n", op1,op2,res);
+
+    //5개의 산술연산자(+,-,*,/,%)로 연산
+    res = op1 * op2;
+    //결과 출력
+    printf("%i * %i = %i\n", op1,op2,res);
+
+    //5개의 산술연산자(+,-,*,/,%)로 연산
+    res = op1 / op2;
+    //결과 출력
+    printf("%i / %i = %i\n", op1,op2,res);
+
+    //5개의 산술연산자(+,-,*,/,%)로 연산
+    res = op1 % op2;
+    //결과 출력
+    printf("%i %% %i = %i\n", op1,op2,res); //""안에서 %%로 써주기
+    
     return 0;
 }
