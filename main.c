@@ -1,22 +1,15 @@
 #include <stdio.h>
 
-int main(int argc, char *argv[])  //int argc,char * argv
+int main(int argc, char *argv[])  //int argc, char *argv[]
 {
-    unsigned int x;
-    int b;
+    //초를 나타내는 한 개의 정수 입력 받기
+    int sec;
+    printf("input the second : ");
+    scanf("%i", &sec);
 
-    printf("input a number : ");
-    scanf("%ui", &x);
+    //초로부터 '초' 계산하기
+    printf("The time is : %i:%i:%i\n",sec/3600,(sec%3600)/60,sec%60);
+                                    //만약에 sec가 3800이면 sec%3600=200
 
-    for (b=0; x != 0; x >>= 1)
-    {
-        if (x & 1)
-        {
-            b++;
-        }
-    }
-
-    printf("The result is : %i\n", b);
-    
     return 0;
 }
